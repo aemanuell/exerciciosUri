@@ -6,4 +6,4 @@ var velAverage = lines.shift();
 
 var liters = hour * velAverage / 12;
 
-console.log(liters.toFixed(3))
+console.log(liters.toFixed(3));
