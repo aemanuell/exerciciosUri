@@ -1,14 +1,14 @@
 var input =  require("fs").readFileSync("stdin", "utf8");
 var valores = input.split("\n");
 
-i = 1;
+var i = 1;
 var cont = 0;
-while(i<=6){
-    var num = parseFloat(valores.shift());
-    if (num > 0){
+while(i<=5){
+    var num = parseInt(valores.shift());
+    if ((num%2) === 0){
         cont++;
     }
     i++;
 }
 
-console.log(cont + " valores positivos");
+console.log(cont + " valores pares");
